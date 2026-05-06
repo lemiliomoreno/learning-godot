@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://pj1yeowurs46"]
+
+[ext_resource type="Script" uid="uid://dc5l5ornl2nyv" path="res://escenas/contador_muertes/contador_muertes.gd" id="1_kvbo8"]
+[ext_resource type="Theme" uid="uid://cet4ocgprl1u7" path="res://escenas/temas/interfaz_ingame.tres" id="2_jfujv"]
+
+[node name="ContadorMuertes" type="Control" unique_id=822532163 node_paths=PackedStringArray("label")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kvbo8")
+label = NodePath("ColorRect/HBoxContainer/Valor")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=232237909]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.5
+offset_top = -19.0
+offset_right = 56.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.63529414, 0.63529414, 0.5254902)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect" unique_id=1987680810]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = -18.0
+offset_right = 54.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 4
+
+[node name="Titulo" type="Label" parent="ColorRect/HBoxContainer" unique_id=1985131761]
+layout_mode = 2
+theme = ExtResource("2_jfujv")
+text = "Muertes:"
+
+[node name="Valor" type="Label" parent="ColorRect/HBoxContainer" unique_id=474980313]
+layout_mode = 2
+theme = ExtResource("2_jfujv")
+text = "0"

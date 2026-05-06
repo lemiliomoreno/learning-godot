@@ -1,0 +1,28 @@
+[gd_scene format=4 uid="uid://dxtrlbpcvshk4"]
+
+[ext_resource type="PackedScene" uid="uid://dndyfyckm106s" path="res://escenas/bordes/bordes.tscn" id="1_68v64"]
+[ext_resource type="PackedScene" uid="uid://djvrwitr1xl6v" path="res://escenas/personaje/personaje.tscn" id="2_e34w8"]
+[ext_resource type="PackedScene" uid="uid://djnqcuj28g65y" path="res://escenas/contenedor_monedas/contenedor_monedas.tscn" id="3_dh5qm"]
+[ext_resource type="PackedScene" uid="uid://cbjpcjwmedtma" path="res://escenas/moneda/moneda.tscn" id="4_cagvo"]
+[ext_resource type="TileSet" uid="uid://506q2xllnkaw" path="res://tile_sets/mazmorra.tres" id="5_4awoi"]
+
+[node name="Nivel2" type="Node2D" unique_id=1147364628]
+
+[node name="Bordes" parent="." unique_id=45385558 instance=ExtResource("1_68v64")]
+
+[node name="Personaje" parent="." unique_id=2125425423 instance=ExtResource("2_e34w8")]
+
+[node name="ContenedorMonedas" parent="." unique_id=1829932993 instance=ExtResource("3_dh5qm")]
+
+[node name="Moneda" parent="ContenedorMonedas" unique_id=771684730 instance=ExtResource("4_cagvo")]
+position = Vector2(-192, -29)
+
+[node name="Moneda2" parent="ContenedorMonedas" unique_id=861910575 instance=ExtResource("4_cagvo")]
+position = Vector2(-127, -31)
+
+[node name="Moneda3" parent="ContenedorMonedas" unique_id=951313872 instance=ExtResource("4_cagvo")]
+position = Vector2(-63, -31)
+
+[node name="Nivel" type="TileMapLayer" parent="." unique_id=134418461]
+tile_map_data = PackedByteArray("AAAAAAEAAAAAAAAAAAD//wEAAAAAAAAAAAD+/wEAAAAAAAAAAAD9/wEAAAAAAAAAAAD8/wEAAAAAAAAAAAD7/wEAAAAAAAAAAAD6/wEAAAAAAAAAAAD5/wEAAAAAAAAAAAD4/wEAAAAAAAAAAAD3/wEAAAAAAAAAAAD2/wEAAAAAAAAAAAD1/wEAAAAAAAAAAAD0/wEAAAAAAAAAAADz/wEAAAAAAAAAAAD8/wAAAAAAAAAAAAD8////AAAAAAAAAAD7////AAAAAAAAAAD7/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD4////AAAAAAAAAAD3////AAAAAAAAAAD3/wAAAAAAAAAAAAD5/wAAAAADAAEAAAD6/wAAAAADAAEAAAD0////AAAAAAAAAAD0/wAAAAAAAAAAAADz/wAAAAAAAAAAAADz////AAAAAAAAAAD1/wAAAAADAAEAAAD2/wAAAAADAAEAAAABAAEAAAAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAADAAIAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAAFAAQAAAAAAAAAAAA=")
+tile_set = ExtResource("5_4awoi")

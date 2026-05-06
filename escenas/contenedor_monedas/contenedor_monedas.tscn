@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://djnqcuj28g65y"]
+
+[ext_resource type="Script" uid="uid://2210v33lbwm3" path="res://escenas/contenedor_monedas/contenedor_monedas.gd" id="1_0ge7w"]
+
+[node name="ContenedorMonedas" type="Node2D" unique_id=1829932993]
+script = ExtResource("1_0ge7w")
