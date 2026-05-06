@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://crj5yb8d4cubc"]
+
+[ext_resource type="Texture2D" uid="uid://dikaop4nchj18" path="res://assets/sprites/mago_spritesheet.png" id="1_oc0fl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sf58x"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84r71"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(16, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kd0xh"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(32, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3w66"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(48, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i763y"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(64, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oc0fl"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(0, 0, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixex1"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(0, 20, 16, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_srfsq"]
+atlas = ExtResource("1_oc0fl")
+region = Rect2(16, 20, 16, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_88n5t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sf58x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84r71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kd0xh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3w66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i763y")
+}],
+"loop": true,
+"name": &"correr",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oc0fl")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixex1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_srfsq")
+}],
+"loop": true,
+"name": &"saltar",
+"speed": 20.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1185304226]
+sprite_frames = SubResource("SpriteFrames_88n5t")
+animation = &"idle"

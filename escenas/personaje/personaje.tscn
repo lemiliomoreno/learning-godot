@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://djvrwitr1xl6v"]
+
+[ext_resource type="PackedScene" uid="uid://crj5yb8d4cubc" path="res://escenas/personaje/sprite_frames_personaje.tscn" id="1_jqp8e"]
+[ext_resource type="Script" uid="uid://0xjfiq0j4bqa" path="res://escenas/personaje/personaje.gd" id="1_yv5yb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jqp8e"]
+size = Vector2(14, 16)
+
+[node name="Personaje" type="CharacterBody2D" unique_id=2125425423]
+script = ExtResource("1_yv5yb")
+
+[node name="AnimatedSprite2D" parent="." unique_id=1185304226 instance=ExtResource("1_jqp8e")]
+animation = &"saltar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1575213642]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_jqp8e")
